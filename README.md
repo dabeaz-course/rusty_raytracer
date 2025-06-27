@@ -64,6 +64,18 @@ without getting get too bogged down by low-level details.
 Although I didn't make any effort to optimize the code, it runs faster
 than the original C++ code when I time it.
 
+The code does not cover every possible Rust concept, but it does
+contain practical examples of the following:
+
+* Mathematical operations and conversions.
+* Operator overloading.
+* User-defined structs and traits.
+* Programming in an object-oriented style.
+* Dynamic dispatch via `dyn` attributes.
+* Use of `Option<T>` and `Box<T>`.
+* Lifetimes (especially as applied to traits).
+* Macros.
+
 The code has been formatted using `rustfmt` and should compile
 without warning messages.  There is a third-party dependency on
 the "fastrand" crate.   Ray tracing is slow--everything will run
