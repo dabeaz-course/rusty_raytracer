@@ -12,7 +12,8 @@ macro_rules! Camera {
 	let mut cam = Camera::default();
 	$(cam.$name = $value;)*
 	cam.initialize();
-        cam})
+        cam});
+    { } => ( Camera::default() );
 }
 
 #[derive(Default)]
